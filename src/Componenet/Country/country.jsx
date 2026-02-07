@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Country.css';
 
-const Country = ({country}) => {
+const Country = ({country, hendelVisitedCountries}) => {
     console.log(country);
     const [visited , SetVisited] = useState(false)
 
@@ -13,6 +13,7 @@ const Country = ({country}) => {
     else{
         SetVisited(true)
     }
+    hendelVisitedCountries(country)
     
    }
     
