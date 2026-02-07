@@ -1,5 +1,5 @@
 import React, { use, useState } from "react";
-import Country from "../Country/country";
+import Country from "../Country/Country";
 import "./Countries.css";
 
 const Countries = ({ CountriesPromis }) => {
@@ -19,7 +19,7 @@ const Countries = ({ CountriesPromis }) => {
   const countres = countresData.countries;
 
   return (
-    <div>
+    <div className="container">
       <h1>In the Countries :{countres.length}</h1>
       <h3>Total countries visit: {visitedCountries.length}</h3>
       <h3>Total flag visited : {Visitedflag.length}</h3>

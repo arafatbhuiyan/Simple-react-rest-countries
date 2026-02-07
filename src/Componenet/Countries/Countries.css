@@ -1,11 +1,23 @@
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;   
+  box-sizing: border-box; 
+}
+
 .countries {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
   gap: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
+}
+
+.country img {
+  width: 100%;        
+  height: 150px;      
+  object-fit: contain; 
 }
 .visited-flag-container img{
   width: 100px;
-  margin-right: 10px;
+  margin-right: 20px;
+  margin-bottom: 10px;
 }
