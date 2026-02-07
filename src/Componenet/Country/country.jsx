@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Country.css';
 
-const Country = ({country, hendelVisitedCountries}) => {
+const Country = ({country, hendelVisitedCountries,hendelVisitedFlag}) => {
     const [visited , SetVisited] = useState(false)
 
 
@@ -24,6 +24,7 @@ const Country = ({country, hendelVisitedCountries}) => {
             <p>Population :{country.population.population}</p>
             <p>Area : {country.area.area} {country.area.area > 300000 ? "(Big Country)" :"(Small Country)"}</p>
             <button onClick={hendelvisited}>{visited ? "Visited": "Not Visited"}</button>
+            <button onClick={ () => {hendelVisitedFlag(country.flags.flags.png)}}>Add visited flag</button>
 
 
         </div>
