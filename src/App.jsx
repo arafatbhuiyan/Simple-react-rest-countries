@@ -2,7 +2,7 @@ import { Suspense, useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import Countries from './Componenet/Countries/Countries'
+import Countries from './Component/Countries/Countries'
 
 function App() {
   const [count, setCount] = useState(0)
